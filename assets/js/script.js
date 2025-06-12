@@ -87,6 +87,30 @@ gsap.from(".section-title", {
   });
 
 
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".animate-left", {
+    y: -50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: "#why-choose-us",
+      start: "top 80%"
+    }
+  });
+
+  gsap.from(".animate-right", {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: "#why-choose-us",
+      start: "top 80%"
+    }
+  });
+
 
 // In your script.js
 window.addEventListener("scroll", () => {
