@@ -1,0 +1,142 @@
+body{
+    background-color: rgba(235, 226, 226, 0.208);
+}
+
+.hero-banner {
+  position: relative;
+  background: url('../images/about-hero.jpg') no-repeat  center/cover fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.breadcrumb-nav {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #FFC107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.breadcrumb-link {
+  color: #FFC107;
+  text-decoration: none;
+}
+.breadcrumb-link:hover{
+    color: white;
+}
+
+.breadcrumb-divider {
+  color: #FFC107;
+}
+
+.breadcrumb-current {
+  color: #FFC107;
+}
+
+.counter-section {
+  background-color: #f8f9fa;
+}
+
+.stat-count {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e2e3e;
+  margin-bottom: 10px;
+}
+
+.counter-label {
+  font-size: 1.1rem;
+  color: #4e5d6c;
+}
+
+
+.about-section {
+  background-color: #f8f9fa;
+}
+
+.about-section h2 {
+      font-family: "Proza Libre", Sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+  color: #1e2e3e;
+  line-height: 1.3;
+}
+.about-section p{
+     font-family: "Arsenal", Sans-serif;
+    font-size: 16px;
+    /* font-weight: 400; */
+}
+
+.about-section .highlight {
+  color: #d8b400; /* Yellow highlight for "Solutions" */
+}
+
+.experience-section h3{
+        font-family: "Poppins", Sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: 0.5px;
+}
+.bulb{
+    width: 80%;
+}
+.solar{
+    align-content: flex-end;
+    align-items: flex-end;
+    width: 80%;
+    padding-top: 17rem;
+}
+.specialist{
+    background:  linear-gradient(rgba(7, 3, 56, 0.589), rgba(1, 5, 55, 0.5)), url('../images/about-sec-3.jpeg') no-repeat  center/cover;
+    /* height: 60vh; */
+     /* background-size: cover;
+     background-position: center; */
+}
+
+.progress {
+  background-color: #fff;
+  border-radius: 50px;
+  height: 12px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  width: 0;
+  border-radius: 50px;
+  transition: width 1.5s ease-in-out;
+}
+
+@media (max-width: 992px){
+    .bulb,.solar{
+        width: 100%;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .bar{
+        padding:0 !important;
+    }
+}

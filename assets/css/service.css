@@ -1,0 +1,75 @@
+body{
+    background-color: rgba(235, 226, 226, 0.208);
+}
+
+.hero-banner {
+  position: relative;
+  background: url('../images/service-hero.jpg') no-repeat center center/cover fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.breadcrumb-nav {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #FFC107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.breadcrumb-link {
+  color: #FFC107;
+  text-decoration: none;
+}
+.breadcrumb-link:hover{
+    color: white;
+}
+
+.breadcrumb-divider {
+  color: #FFC107;
+}
+
+.breadcrumb-current {
+  color: #FFC107;
+}
+
+
+.counter-section {
+  background-color: #f8f9fa;
+}
+
+.stat-count {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e2e3e;
+  margin-bottom: 10px;
+}
+
+.counter-label {
+  font-size: 1.1rem;
+  color: #4e5d6c;
+}
+

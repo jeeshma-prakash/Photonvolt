@@ -193,3 +193,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
       updateCount();
     });
+
+    // service html
+
+    const stats = document.querySelectorAll('.stat-count');
+stats.forEach(stat => {
+  const updateCount = () => {
+    const target = +stat.getAttribute('data-target');
+    const count = +stat.innerText;
+    const increment = target / 100;
+
+    if (count < target) {
+      stat.innerText = Math.ceil(count + increment);
+      setTimeout(updateCount, 30);
+    } else {
+      stat.innerText = target + (target >= 100 ? '+' : '');
+    }
+  };
+  updateCount();
+});
+
+// about section
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bars = document.querySelectorAll(".progress-bar");
+          bars.forEach(bar => {
+            const targetWidth = bar.getAttribute("data-width");
+            bar.style.width = targetWidth;
+          });
+          observer.disconnect();
+        }
+      });
+    });
+
+    observer.observe(document.querySelector(".progress-bar"));
+  });

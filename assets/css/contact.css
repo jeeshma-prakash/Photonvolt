@@ -1,0 +1,84 @@
+.contact-pic{
+    height: 92vh;
+}
+body{
+    background-color: rgba(235, 226, 226, 0.208);
+}
+
+.hero-banner {
+  position: relative;
+  background: url('../images/contact-cover.jpg') no-repeat  center/cover fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.633); /* dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.breadcrumb-nav {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #FFC107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.breadcrumb-link {
+  color: #FFC107;
+  text-decoration: none;
+}
+.breadcrumb-link:hover{
+    color: white;
+}
+
+.breadcrumb-divider {
+  color: #FFC107;
+}
+
+.breadcrumb-current {
+  color: #FFC107;
+}
+
+.contact-img{
+    width: 100%;
+    max-height: 80vh;
+}
+.title{
+    font-family: "Manrope";
+    font-size: 32px;
+}
+.sub-title{
+    font-family: "proza Libra";
+    font-size: 32px;
+}
+.contact-sec h2{
+    font-family: "Proza Libre", Sans-serif;
+    font-size: 50px;
+    font-weight:200;
+    color: #000000;
+}
+ul.custom-list {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  line-height: 2rem;
+}

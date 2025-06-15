@@ -1,0 +1,123 @@
+body{
+    background-color: rgba(235, 226, 226, 0.208);
+}
+
+.hero-banner {
+  position: relative;
+  background: url('../images/sec-2.jpeg') no-repeat  center/cover fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.677); /* dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.breadcrumb-nav {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #FFC107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.breadcrumb-link {
+  color: #FFC107;
+  text-decoration: none;
+}
+.breadcrumb-link:hover{
+    color: white;
+}
+
+.breadcrumb-divider {
+  color: #FFC107;
+}
+
+.breadcrumb-current {
+  color: #FFC107;
+}
+
+.recent-blog-section {
+  background-color: #f7f8f9;
+}
+
+.section-subtitle {
+  color: #1ca151;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #1a2a3a;
+}
+
+.blog-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+.blog-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.0));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.blog-overlay h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-overlay a {
+  color: #ffc107;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.blog-overlay a span {
+  margin-left: 5px;
+}
