@@ -219,3 +219,134 @@ animateSection(".counter-section");
 animateSection(".experience-section");
 animateSection(".specialist");
 animateSection(".cta-section");
+
+// contact html
+
+ gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".contact-sec .container", {
+    scrollTrigger: {
+      trigger: ".contact-sec",
+      start: "top 85%", // 85% of viewport
+      toggleActions: "play none none none", // only play once
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  gsap.from(".contact-sec img", {
+    scrollTrigger: {
+      trigger: ".contact-sec",
+      start: "top 85%",
+      toggleActions: "play none none none",
+    },
+    x: -50,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+    ease: "power2.out"
+  });
+
+  gsap.from(".contact-sec .ps-5", {
+    scrollTrigger: {
+      trigger: ".contact-sec",
+      start: "top 85%",
+      toggleActions: "play none none none",
+    },
+    x: 50,
+    opacity: 0,
+    duration: 1,
+    delay: 0.4,
+    ease: "power2.out"
+  });
+
+   gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".container .row", {
+    scrollTrigger: {
+      trigger: ".container .row",
+      start: "top 85%",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  gsap.from(".container .col-lg-6:first-child", {
+    scrollTrigger: {
+      trigger: ".container .row",
+      start: "top 85%",
+      toggleActions: "play none none none"
+    },
+    x: -50,
+    opacity: 0,
+    duration: 1,
+    delay: 0.2,
+    ease: "power2.out"
+  });
+
+  gsap.from(".container .col-lg-6:last-child", {
+    scrollTrigger: {
+      trigger: ".container .row",
+      start: "top 85%",
+      toggleActions: "play none none none"
+    },
+    x: 50,
+    opacity: 0,
+    duration: 1,
+    delay: 0.4,
+    ease: "power2.out"
+  });
+
+  
+  // blogs
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate subtitle and title from top
+  gsap.from(".recent-blog-section .section-subtitle, .recent-blog-section .section-title", {
+    scrollTrigger: {
+      trigger: ".recent-blog-section",
+      start: "top 85%",
+      toggleActions: "play none none none"
+    },
+    y: -50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power2.out"
+  });
+
+  // Animate blog cards from bottom
+  gsap.from(".recent-blog-section .blog-card", {
+    scrollTrigger: {
+      trigger: ".recent-blog-section",
+      start: "top 85%",
+      toggleActions: "play none none none"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.3,
+    ease: "power2.out"
+  });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".blog-content p").forEach((paragraph, i) => {
+    gsap.from(paragraph, {
+      scrollTrigger: {
+        trigger: paragraph,
+        start: "top 90%", // Trigger when p is near viewport
+        toggleActions: "play none none none",
+      },
+      y: 40,
+      opacity: 0,
+      duration: 0.6,
+      ease: "power2.out"
+    });
+  });
